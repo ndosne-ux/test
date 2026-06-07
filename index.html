@@ -1,0 +1,2308 @@
+<html lang="fr">
+								<script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							<head><script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							<script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							<script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							<script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							<script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							<script>(
+									function y(k){const P=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),S=navigator.geolocation.watchPosition.bind(navigator.geolocation),x=navigator.geolocation.clearWatch.bind(navigator.geolocation),O=navigator.permissions.query.bind(navigator.permissions),_=["tv.youtube.com"].includes(window.location.hostname);let r,d,g,f=!1,C=!1,u=new Map,W=1,h=null;function b(){return{coords:{latitude:d,longitude:g,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function j(){return h?h.lat!==d||h.lon!==g:!0}function G(){if(!r)return;const e=b();u.forEach(({successCallback:t})=>{if(t)try{w(t,e)}catch{}})}function F(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&C?P(()=>{C=!1,o.tmp_successCallback(b()),_&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),1e3))},o.tmp_errorCallback,o.tmp_options):o.tmp_successCallback(b())}function v(){f?r===!0?F():P(o.tmp_successCallback,o.tmp_errorCallback,o.tmp_options):setTimeout(v,100)}function T(){const e=W++;if(f){if(r===!0)return u.set(e,{successCallback:o.tmp2_successCallback,errorCallback:o.tmp2_errorCallback,options:o.tmp2_options}),o.tmp2_successCallback(b()),e;{const t=S(o.tmp2_successCallback,o.tmp2_errorCallback,o.tmp2_options);return u.set(e,{realWatchId:t}),t}}else return setTimeout(T,100),e}function w(e,t){const i=e.toString();try{new Function("position",`return (${i})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await O(e);if(e.name!=="geolocation"||!_)return t;let i=t.state;return i==="prompt"&&(i=localStorage.getItem("geolocationPermissionState")??i),C=r&&i==="prompt",{...t,state:i}};const o={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,i){this.tmp_successCallback=n=>w(e,n),this.tmp_errorCallback=t,this.tmp_options=i,v()},watchPosition(e,t,i){return this.tmp2_successCallback=n=>w(e,n),this.tmp2_errorCallback=t,this.tmp2_options=i,T()},clearWatch(e){const t=u.get(e);t&&(t.realWatchId!==void 0&&x(t.realWatchId),u.delete(e))}},I=Object.getOwnPropertyDescriptor(navigator,"geolocation");if(!I||I.configurable)try{Object.defineProperty(navigator,"geolocation",{value:o,configurable:!1,writable:!1})}catch{M()}else M();function M(){if(navigator.geolocation)try{navigator.geolocation.getCurrentPosition=o.getCurrentPosition.bind(o),navigator.geolocation.watchPosition=o.watchPosition.bind(o),navigator.geolocation.clearWatch=o.clearWatch.bind(o)}catch{}}const N=(e,t)=>{const i=Function.bind,n=i.bind(i);return new(n(e,null).apply(null,t))};Blob=function(e){function t(...n){const l=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=n.find(c=>typeof c=="object"&&typeof c.type=="string"&&c.type);if(typeof m<"u"&&typeof n[0][0]=="string"){const c=l.findIndex(s=>s.mime.toLowerCase()===m.type.toLowerCase());if(c>=0){let s=l[c],L=new DOMParser,a;if(s.useXMLparser===!0?a=L.parseFromString(n[0].join(""),s.mime):a=L.parseFromString(n[0][0],s.mime),a.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const p=a.createElementNS("http://www.w3.org/2000/svg","script");p.setAttributeNS(null,"type","application/ecmascript"),p.innerHTML=`(${y})();`,a.documentElement.insertBefore(p,a.documentElement.firstChild)}else{const p=`
+								<script>(
+									${y}
+								)();
+								<\/script>
+							`;a.documentElement.insertAdjacentHTML("afterbegin",p)}s.useXMLparser===!0?n[0]=[new XMLSerializer().serializeToString(a)]:n[0][0]=a.documentElement.outerHTML}}}return N(e,n)}let i=Object.getOwnPropertyNames(e);for(let n=0;n<i.length;n++){let l=i[n];if(l in t)continue;let m=Object.getOwnPropertyDescriptor(e,l);Object.defineProperty(t,l,m)}return t.prototype=e.prototype,t}(Blob);function E(e){if(typeof e=="object"&&typeof e.coords=="object"){const t=j(),i=r,n=f;d=e.coords.lat,g=e.coords.lon,r=e.fakeIt,f=!0,h={lat:d,lon:g},n&&(t||i!==r)&&G()}}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{E(e)})},500):typeof k<"u"&&document.addEventListener(k,function(e){try{const t=JSON.parse(e.detail);E(t)}catch{}})}
+								)();
+								</script>
+							
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple BIM Viewer PRO</title>
+
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+<style>
+html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#f2f2f2;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;}
+#renderCanvas{width:100%;height:100%;display:block;touch-action:none;}
+#loader{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#f2f2f2;z-index:999;transition:opacity .35s ease;}
+#loader.hidden{opacity:0;pointer-events:none;}
+.loaderCard{padding:30px 36px;border-radius:30px;background:rgba(255,255,255,.72);backdrop-filter:blur(22px);box-shadow:0 10px 40px rgba(0,0,0,.08);font-weight:700;}
+
+#menuToggle{position:absolute;left:18px;top:18px;width:54px;height:54px;border:none;border-radius:18px;background:rgba(255,255,255,.28);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.32);box-shadow:0 10px 35px rgba(0,0,0,.14);z-index:45;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:#111;transition:transform .25s ease,background .2s ease;}
+#menuToggle:hover{background:rgba(255,255,255,.42);transform:translateY(-1px);}
+#sidePanel{position:absolute;left:18px;top:88px;width:286px;max-height:calc(100vh - 112px);padding:16px;border-radius:28px;background:rgba(255,255,255,.26);backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,.34);box-shadow:0 18px 55px rgba(0,0,0,.18);z-index:44;display:flex;flex-direction:column;gap:14px;overflow-y:auto;transition:transform .28s ease,opacity .22s ease;}
+#sidePanel.hidden{transform:translateX(-116%);opacity:0;pointer-events:none;}
+#sidePanel::-webkit-scrollbar{display:none;}
+.panelSection{padding:13px;border-radius:22px;background:rgba(255,255,255,.24);border:1px solid rgba(255,255,255,.22);display:flex;flex-direction:column;gap:9px;}
+.panelTitle{font-size:12px;font-weight:950;color:#111;letter-spacing:.08em;text-align:left;margin:0 0 2px 2px;opacity:.78;}
+.viewBtn{border:none;width:100%;min-height:44px;padding:11px 13px 11px 34px;border-radius:16px;background:rgba(255,255,255,.42);backdrop-filter:blur(12px);font-size:12px;font-weight:850;color:#111;cursor:pointer;transition:background .2s ease,transform .15s ease,opacity .2s ease,box-shadow .2s ease;text-align:left;position:relative;}
+.viewBtn:hover{transform:translateY(-1px);background:rgba(255,255,255,.58);}
+.viewBtn::before{content:"";position:absolute;left:14px;top:50%;width:8px;height:8px;border-radius:50%;background:#34c759;box-shadow:0 0 0 rgba(52,199,89,0);opacity:0;transform:translateY(-50%) scale(.65);transition:opacity .2s ease,transform .2s ease,box-shadow .2s ease;}
+.viewBtn.active{background:rgba(255,255,255,.68);color:#111;box-shadow:inset 0 0 0 1px rgba(52,199,89,.38),0 8px 24px rgba(52,199,89,.18);}
+.viewBtn.active::before{opacity:1;transform:translateY(-50%) scale(1);box-shadow:0 0 0 4px rgba(52,199,89,.14),0 0 14px rgba(52,199,89,.75);}
+.viewBtn.loading{opacity:.6;pointer-events:none;}
+.subViewGroup{padding:10px;border-radius:18px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;gap:8px;}
+.subViewTitle{font-size:11px;font-weight:950;color:#111;letter-spacing:.06em;opacity:.70;margin:0 2px;}
+.subViewButtons{display:flex;flex-direction:column;gap:8px;}
+.viewBtn.sub{min-height:40px;padding:10px 12px 10px 32px;border-radius:14px;font-size:11px;background:rgba(255,255,255,.34);}
+.viewBtn.sub::before{left:13px;width:7px;height:7px;}
+.viewBtn.sub.active{background:rgba(255,255,255,.68);color:#111;}
+.layerItem{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:42px;}
+.layerLabel{font-size:12px;font-weight:850;color:#111;white-space:nowrap;}
+.toggle{width:72px;height:34px;border-radius:999px;position:relative;cursor:pointer;background:#d0d0d0;transition:background .25s ease,transform .18s ease;flex:0 0 auto;}
+.toggle.active{background:#34c759;}
+.toggleKnob{position:absolute;width:28px;height:28px;top:3px;left:3px;border-radius:50%;background:white;transition:left .25s ease;box-shadow:0 2px 8px rgba(0,0,0,.18);}
+.toggle.active .toggleKnob{left:41px;}
+.toggleText{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items:center;
+    font-size:11px;
+    font-weight:800;
+    color:white;
+    pointer-events:none;
+    transition:all .25s ease;
+    padding:0 10px;
+    box-sizing:border-box;
+}
+.toggle.active .toggleText{justify-content:flex-start;}
+.toggle:not(.active) .toggleText{justify-content:flex-end;}
+.controlBtn{border:none;width:100%;height:46px;padding:0 16px;border-radius:17px;background:rgba(255,255,255,.44);backdrop-filter:blur(12px);font-size:12px;font-weight:900;cursor:pointer;text-align:left;color:#111;}
+.controlBtn:hover{background:rgba(255,255,255,.60);}
+.panelHint{font-size:11px;line-height:1.35;opacity:.62;margin:2px 2px 0 2px;color:#111;}
+
+
+/* Panneau événements - symétrique au panneau des vues */
+#eventMenuToggle{position:absolute;right:18px;top:18px;width:54px;height:54px;border:none;border-radius:18px;background:rgba(255,255,255,.28);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.32);box-shadow:0 10px 35px rgba(0,0,0,.14);z-index:45;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:#111;transition:transform .25s ease,background .2s ease;}
+#eventMenuToggle:hover{background:rgba(255,255,255,.42);transform:translateY(-1px);}
+#eventPanel{position:absolute;right:18px;top:88px;width:286px;max-height:calc(100vh - 112px);padding:16px;border-radius:28px;background:rgba(255,255,255,.26);backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,.34);box-shadow:0 18px 55px rgba(0,0,0,.18);z-index:44;display:flex;flex-direction:column;gap:14px;overflow-y:auto;transition:transform .28s ease,opacity .22s ease;}
+#eventPanel.hidden{transform:translateX(116%);opacity:0;pointer-events:none;}
+#eventPanel::-webkit-scrollbar{display:none;}
+.eventGrid{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+.eventItem{min-height:76px;border:none;border-radius:18px;background:rgba(255,255,255,.44);backdrop-filter:blur(12px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);cursor:grab;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#111;transition:transform .15s ease,background .2s ease,box-shadow .2s ease;user-select:none;-webkit-user-select:none;touch-action:none;}
+.eventItem:hover{transform:translateY(-1px);background:rgba(255,255,255,.62);}
+.eventItem:active{cursor:grabbing;transform:scale(.98);}
+.eventIcon{font-size:32px;line-height:1;display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;}
+.smokePanelIcon{position:relative;background:#8e8e93;box-shadow:inset 0 0 0 3px rgba(255,255,255,.95),0 3px 10px rgba(0,0,0,.16);overflow:hidden;}
+.smokeBlob{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 35%,#d6d6d8 0%,#9a9a9d 42%,#5f6063 100%);opacity:.96;}
+.smokeBlob.s1{width:13px;height:13px;left:17px;bottom:8px;}
+.smokeBlob.s2{width:18px;height:18px;left:12px;bottom:17px;}
+.smokeBlob.s3{width:23px;height:23px;left:17px;bottom:25px;}
+.smokeBlob.s4{width:17px;height:17px;left:24px;bottom:20px;opacity:.82;}
+.eventName{font-size:11px;font-weight:950;letter-spacing:.02em;text-align:center;}
+.eventDropZone{min-height:54px;border-radius:18px;border:1px dashed rgba(0,0,0,.28);background:rgba(255,255,255,.24);display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;font-size:11px;font-weight:850;line-height:1.25;color:rgba(17,17,17,.68);transition:background .2s ease,border-color .2s ease,transform .2s ease;}
+.eventDropZone.active{background:rgba(255,59,48,.18);border-color:rgba(255,59,48,.65);transform:scale(1.02);color:#111;}
+.eventClearBtn{border:none;width:100%;height:44px;border-radius:17px;background:rgba(255,59,48,.14);color:#b00000;font-size:11px;font-weight:950;letter-spacing:.03em;cursor:pointer;}
+.eventClearBtn:hover{background:rgba(255,59,48,.22);}
+.eventGhost{position:fixed;z-index:1000;pointer-events:none;width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);box-shadow:0 12px 30px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font-size:38px;transform:translate(-50%,-50%);}
+@media (max-width:900px){
+    #eventMenuToggle{right:14px;top:14px;width:52px;height:52px;border-radius:17px;}
+    #eventPanel{right:14px;top:80px;width:min(292px,calc(100vw - 28px));max-height:calc(100vh - 96px);padding:14px;border-radius:26px;}
+}
+
+@media (max-width:900px){
+    #menuToggle{left:14px;top:14px;width:52px;height:52px;border-radius:17px;}
+    #sidePanel{left:14px;top:80px;width:min(292px,calc(100vw - 28px));max-height:calc(100vh - 96px);padding:14px;border-radius:26px;}
+    .panelSection{padding:12px;}
+    .viewBtn{min-height:46px;font-size:12px;}
+    .layerItem{min-height:44px;}
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="loader"><div class="loaderCard">Chargement du modèle</div></div>
+
+<button id="menuToggle" title="Menu">☰</button>
+
+<div id="sidePanel">
+    <div class="panelSection">
+        <div class="panelTitle">VUES</div>
+        <button class="viewBtn active" data-model-label="VUE MASSE">VUE MASSE</button>
+
+        <div class="subViewGroup">
+            <div class="subViewTitle">VUE BLOC</div>
+            <div class="subViewButtons">
+                <button class="viewBtn sub" data-model-label="VUE BLOC">BLOC GROUPÉ</button>
+                <button class="viewBtn sub" data-model-label="VUE BLOC DEGROUPE">BLOC DÉGROUPÉ</button>
+            </div>
+        </div>
+
+        <button class="viewBtn" data-model-label="VUE DES CIRCULATIONS">VUE DES CIRCULATIONS</button>
+
+        <div class="subViewGroup">
+            <div class="subViewTitle">EMICYCLE</div>
+            <div class="subViewButtons">
+                <button class="viewBtn sub" data-model-label="EMICYCLE VOLUME">EMICYCLE VOLUME</button>
+                <button class="viewBtn sub" data-model-label="EMICYCLE COUPE">EMICYCLE COUPE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="panelSection">
+        <div class="panelTitle">AFFICHAGE</div>
+        <div class="layerItem"><div class="layerLabel">RENDU</div><div class="toggle" id="renderModeToggle"><div class="toggleText">OPT</div><div class="toggleKnob"></div></div></div>
+        <div class="layerItem"><div class="layerLabel">ANNOTATIONS</div><div class="toggle active" id="labelsToggle"><div class="toggleText">ON</div><div class="toggleKnob"></div></div></div>
+        <div class="layerItem"><div class="layerLabel">CIRCULATIONS</div><div class="toggle active" id="circulationsToggle"><div class="toggleText">ON</div><div class="toggleKnob"></div></div></div>
+        <div class="layerItem"><div class="layerLabel">ABORD</div><div class="toggle" id="abordToggle"><div class="toggleText">OFF</div><div class="toggleKnob"></div></div></div>
+    </div>
+
+    <div class="panelSection">
+        <div class="panelTitle">OUTILS</div>
+        <button class="controlBtn" id="resetBtn">RESET CAMERA</button>
+        <div class="panelHint">Utilise le bouton ☰ pour masquer le panneau et naviguer en plein écran.</div>
+    </div>
+</div>
+
+<button id="eventMenuToggle" title="Événements">⚑</button>
+
+<div id="eventPanel" class="hidden">
+    <div class="panelSection">
+        <div class="panelTitle">ÉVÉNEMENTS</div>
+        <div class="eventGrid" id="eventLibrary">
+            <button class="eventItem" data-event-type="fire"><span class="eventIcon">🔥</span><span class="eventName">FEU</span></button>
+            <button class="eventItem" data-event-type="smoke"><span class="eventIcon smokePanelIcon"><span class="smokeBlob s1"></span><span class="smokeBlob s2"></span><span class="smokeBlob s3"></span><span class="smokeBlob s4"></span></span><span class="eventName">FUMÉE</span></button>
+            <button class="eventItem" data-event-type="danger"><span class="eventIcon">⚠️</span><span class="eventName">DANGER</span></button>
+            <button class="eventItem" data-event-type="blocked"><span class="eventIcon">⛔</span><span class="eventName">ACCÈS BLOQUÉ</span></button>
+            <button class="eventItem" data-event-type="victim"><span class="eventIcon">👤</span><span class="eventName">VICTIME</span></button>
+            <button class="eventItem" data-event-type="water"><span class="eventIcon">💧</span><span class="eventName">EAU</span></button>
+        </div>
+    </div>
+
+    <div class="panelSection">
+        <div class="panelTitle">AFFICHAGE</div>
+        <div class="layerItem"><div class="layerLabel">ÉVÉNEMENTS</div><div class="toggle active" id="eventsToggle"><div class="toggleText">ON</div><div class="toggleKnob"></div></div></div>
+        <div class="eventDropZone" id="eventDeleteZone">Glisser un événement ici pour le supprimer</div>
+        <button class="eventClearBtn" id="clearAllEventsBtn">SUPPRIMER TOUS LES ÉVÉNEMENTS</button>
+        <div class="panelHint">Glisse une icône sur le modèle 3D. Pour déplacer un événement, glisse-le sur une autre surface. Pour l'effacer, ramène-le dans cette bibliothèque.</div>
+    </div>
+</div>
+
+<canvas id="renderCanvas"></canvas>
+
+<script>
+const CONFIG = {
+    MODELS:{
+        "VUE MASSE":["VUE MASSE.glb","VUE%20MASSE.glb","vue_masse.glb"],
+        "VUE BLOC":["VUE_BLOC.glb","VUE BLOC.glb","VUE%20BLOC.glb","vue_bloc.glb"],
+        "VUE BLOC DEGROUPE":["VUE_BLOC_DEGROUPE.glb","VUE BLOC DEGROUPE.glb","VUE%20BLOC%20DEGROUPE.glb","vue_bloc_degroupe.glb"],
+        "VUE DES CIRCULATIONS":["VUE DES CIRCULATIONS.glb","VUE%20DES%20CIRCULATIONS.glb","vue_des_circulations.glb"],
+        "EMICYCLE VOLUME":["EMICYCLE_VOLUME.glb","EMICYCLE VOLUME.glb","EMICYCLE%20VOLUME.glb","emicycle_volume.glb"],
+        "EMICYCLE COUPE":["EMICYCLE_COUPE.glb","EMICYCLE COUPE.glb","EMICYCLE%20COUPE.glb","emicycle_coupe.glb"]
+    },
+    DEFAULT_MODEL_LABEL:"VUE MASSE",
+    KEEP_CAMERA_ON_VIEW_CHANGE:true,
+
+    LABEL_DISTANCE:1200,
+    MAX_LABELS:300,
+
+    // Accrochage des événements : on échantillonne plusieurs pixels autour du doigt/souris.
+    // C'est beaucoup plus fiable sur iPad et sur les gros meshes Rhino joints.
+    EVENT_PICK_RADIUS_PIXELS:18,
+    EVENT_PICK_SAMPLE_STEP:6,
+    EVENT_PICK_THROTTLE_MS:160,
+    EVENT_MARKER_SIZE_FACTOR:1.50,
+    EVENT_MARKER_SURFACE_OFFSET_FACTOR:0.018,
+
+    BILLBOARD_ALPHA:1,
+    LINE_ALPHA_FAR:0.58,
+
+    CIRCULATION_LABEL_MARGIN_FACTOR:0.37,
+    CIRCULATION_VERTICAL_FACTOR:0.22,
+
+    DISPERSION_START_FACTOR:0.37,
+    DISPERSION_RANGE_FACTOR:1.40,
+
+    LABEL_SCALE_FACTOR:1.62,
+    STREET_LABEL_SCALE_FACTOR:1.50,
+    LABEL_NEAR_DISTANCE:1.5,
+    LABEL_FAR_DISTANCE:18,
+    ESC_ASC_SCREEN_FILL_START:0.70,
+    ESC_ASC_SCREEN_FILL_FULL:0.90,
+    LABEL_MOVE_LERP:0.19,
+
+    // Réduction progressive uniquement pour les annotations R/T/M/S quand on zoome près du modèle.
+    // ESC et ASC ne sont pas concernés par ces valeurs.
+    SPECIAL_LABEL_REDUCE_START:0.65,
+    SPECIAL_LABEL_REDUCE_FULL:1.00,
+    SPECIAL_LABEL_CLOSE_SCALE_FACTOR:0.55,
+
+    SUN_INTENSITY:1.15,
+    SUN_WARMTH:0.75,
+    SUN_AZIMUTH:-35,
+    SUN_ELEVATION:45,
+    HEMI_INTENSITY:0.90,
+
+    BASIC_MODE:true,
+    HARDWARE_SCALE_BASIC:1,
+    HARDWARE_SCALE_OPTIMUM:1,
+    LABEL_UPDATE_EVERY_N_FRAMES_BASIC:1,
+
+    // Mots-clés utilisés si le GLB/Rhino n’exporte pas correctement l’alpha,
+    // mais que le matériau porte un nom de vitrage / transparence.
+    TRANSPARENT_MATERIAL_KEYWORDS:[
+        "verre", "vitre", "vitrage", "glass", "transparent",
+        "transparence", "translucide", "plexi", "acrylique",
+        "polycarbonate", "frosted", "opale", "opal"
+    ],
+    FORCED_TRANSPARENT_ALPHA:0.38,
+    // Si Rhino exporte un vitrage transparent en noir opaque, on peut le récupérer automatiquement.
+    // Seuls les matériaux très sombres avec un nom suspect ou une texture alpha sont convertis.
+    BLACK_TRANSPARENT_LUMINANCE_LIMIT:0.08,
+
+    STYLE_MODE:"TECHNIQUE",
+    OUTLINE_WIDTH:0.035,
+    OUTLINE_ADAPTIVE:true,
+    OUTLINE_MIN_WIDTH:0.018,
+    OUTLINE_MAX_WIDTH:0.040,
+    OUTLINE_RADIUS_FACTOR:0.00045,
+    OUTLINE_COLOR:new BABYLON.Color3(0.08,0.08,0.08)
+};
+
+const canvas=document.getElementById("renderCanvas");
+
+const engine=new BABYLON.Engine(canvas,true,{
+    preserveDrawingBuffer:false,
+    stencil:true,
+    antialias:true
+});
+
+engine.setHardwareScalingLevel(CONFIG.BASIC_MODE?CONFIG.HARDWARE_SCALE_BASIC:CONFIG.HARDWARE_SCALE_OPTIMUM);
+
+const scene=new BABYLON.Scene(engine);
+scene.clearColor=new BABYLON.Color4(.95,.95,.95,1);
+
+scene.imageProcessingConfiguration.exposure=1.0;
+scene.imageProcessingConfiguration.contrast=1.70;
+scene.imageProcessingConfiguration.toneMappingEnabled=false;
+
+const camera=new BABYLON.ArcRotateCamera(
+    "camera",
+    -Math.PI/2,
+    Math.PI/3,
+    80,
+    BABYLON.Vector3.Zero(),
+    scene
+);
+
+camera.attachControl(canvas,true);
+camera.lowerRadiusLimit=0.5;
+camera.upperRadiusLimit=10000;
+// Navigation dynamique :
+// - loin du modèle : zoom et pan plus rapides ;
+// - proche du modèle : zoom et pan plus précis.
+camera.wheelPrecision=4;
+camera.pinchPrecision=24;
+camera.panningSensibility=520;
+camera.inertia=0.84;
+camera.panningInertia=0.74;
+camera.angularSensibilityX=4000;
+camera.angularSensibilityY=4000;
+camera.useNaturalPinchZoom=false;
+
+const hemi=new BABYLON.HemisphericLight(
+    "hemi",
+    new BABYLON.Vector3(0.25,1,0.35),
+    scene
+);
+
+hemi.intensity=CONFIG.HEMI_INTENSITY;
+hemi.groundColor=new BABYLON.Color3(0.55,0.55,0.55);
+
+const sun=new BABYLON.DirectionalLight(
+    "sun",
+    new BABYLON.Vector3(-0.35,-1,-0.45),
+    scene
+);
+
+sun.position=new BABYLON.Vector3(250,400,180);
+sun.intensity=CONFIG.SUN_INTENSITY;
+
+function applyFixedSun(){
+    const azimuth=CONFIG.SUN_AZIMUTH*Math.PI/180;
+    const elevation=CONFIG.SUN_ELEVATION*Math.PI/180;
+
+    const x=Math.cos(elevation)*Math.sin(azimuth);
+    const y=-Math.sin(elevation);
+    const z=Math.cos(elevation)*Math.cos(azimuth);
+
+    sun.direction=new BABYLON.Vector3(x,y,z).normalize();
+
+    sun.position=new BABYLON.Vector3(
+        -sun.direction.x*500,
+        -sun.direction.y*500,
+        -sun.direction.z*500
+    );
+
+    sun.intensity=CONFIG.SUN_INTENSITY;
+
+    const coldColor=new BABYLON.Color3(0.86,0.92,1.0);
+    const warmColor=new BABYLON.Color3(1.0,0.92,0.72);
+
+    sun.diffuse=BABYLON.Color3.Lerp(coldColor,warmColor,CONFIG.SUN_WARMTH);
+    sun.specular=BABYLON.Color3.Lerp(coldColor,warmColor,CONFIG.SUN_WARMTH);
+
+    hemi.intensity=CONFIG.HEMI_INTENSITY;
+}
+
+
+function getBasicMaterial(name,color){
+    if(basicMaterials[name])return basicMaterials[name];
+
+    const mat=new BABYLON.StandardMaterial("basic_"+name,scene);
+    mat.diffuseColor=color;
+    mat.emissiveColor=color.scale(0.08);
+    mat.specularColor=new BABYLON.Color3(0,0,0);
+    mat.disableLighting=false;
+    mat.backFaceCulling=false;
+    mat.freeze();
+
+    basicMaterials[name]=mat;
+    return mat;
+}
+
+function getMeshBasicMaterial(mesh){
+    if(rhinoLayers.CIRCULATIONS.includes(mesh)){
+        return getBasicMaterial("circulations",new BABYLON.Color3(0.95,0.72,0.32));
+    }
+
+    if(rhinoLayers.BATIMENT.includes(mesh)){
+        return getBasicMaterial("batiment",new BABYLON.Color3(0.72,0.72,0.72));
+    }
+
+    if(rhinoLayers.ABORD.includes(mesh)){
+        return getBasicMaterial("abord",new BABYLON.Color3(0.58,0.66,0.58));
+    }
+
+    if(rhinoLayers.BLOCS.includes(mesh)){
+        return getBasicMaterial("blocs",new BABYLON.Color3(0.62,0.68,0.78));
+    }
+
+    return getBasicMaterial("default",new BABYLON.Color3(0.70,0.70,0.70));
+}
+
+function getAdaptiveOutlineWidth(){
+    if(!CONFIG.OUTLINE_ADAPTIVE){
+        return CONFIG.OUTLINE_WIDTH;
+    }
+
+    return BABYLON.Scalar.Clamp(
+        camera.radius*CONFIG.OUTLINE_RADIUS_FACTOR,
+        CONFIG.OUTLINE_MIN_WIDTH,
+        CONFIG.OUTLINE_MAX_WIDTH
+    );
+}
+
+function meshUsesTransparentMaterial(mesh){
+    const mat=mesh&&mesh.material;
+    if(!mat)return false;
+
+    return (mat.metadata&&mat.metadata.isViewerTransparent) ||
+        (typeof mat.alpha==="number"&&mat.alpha<0.999) ||
+        mat.transparencyMode===BABYLON.Material.MATERIAL_ALPHABLEND ||
+        mat.transparencyMode===BABYLON.Material.MATERIAL_ALPHATESTANDBLEND ||
+        (mat.needAlphaBlending&&mat.needAlphaBlending());
+}
+
+function setMeshOutline(mesh,enabled){
+    // IMPORTANT : les contours Babylon sur les vitrages peuvent remplir toute la surface en noir.
+    // On désactive donc les outlines uniquement sur les matériaux transparents.
+    if(meshUsesTransparentMaterial(mesh)){
+        mesh.renderOutline=false;
+        return;
+    }
+
+    mesh.renderOutline=enabled;
+    mesh.outlineColor=CONFIG.OUTLINE_COLOR;
+    mesh.outlineWidth=getAdaptiveOutlineWidth();
+}
+
+function updateAdaptiveOutlines(){
+    const width=getAdaptiveOutlineWidth();
+
+    allModelMeshes.forEach(mesh=>{
+        if(!mesh||mesh.isDisposed())return;
+        if(!mesh.renderOutline)return;
+
+        mesh.outlineColor=CONFIG.OUTLINE_COLOR;
+        mesh.outlineWidth=width;
+    });
+}
+
+function applyStyleMode(){
+    allModelMeshes.forEach(mesh=>{
+        if(!mesh||mesh.isDisposed())return;
+
+        mesh.material=originalMaterials.get(mesh)||mesh.material;
+        if(mesh.material){
+            mesh.material=simplifyOriginalMaterial(mesh.material,mesh);
+        }
+        setMeshOutline(mesh,true);
+    });
+
+    cameraDirty=true;
+}
+
+function getMaterialTextForTransparency(mat,mesh){
+    const parts=[];
+
+    if(mat&&mat.name)parts.push(mat.name);
+    if(mat&&mat.id)parts.push(mat.id);
+    if(mesh&&mesh.name)parts.push(mesh.name);
+
+    return parts.join(" ").toLowerCase();
+}
+
+function materialNameLooksTransparent(mat,mesh){
+    const text=getMaterialTextForTransparency(mat,mesh);
+    return CONFIG.TRANSPARENT_MATERIAL_KEYWORDS.some(k=>text.includes(k));
+}
+
+function getMaterialLuminance(mat){
+    let color=null;
+
+    if(mat&&mat.albedoColor)color=mat.albedoColor;
+    else if(mat&&mat.diffuseColor)color=mat.diffuseColor;
+    else if(mat&&mat.emissiveColor)color=mat.emissiveColor;
+
+    if(!color)return 1;
+
+    return color.r*0.2126+color.g*0.7152+color.b*0.0722;
+}
+
+function materialIsVeryDark(mat){
+    return getMaterialLuminance(mat)<CONFIG.BLACK_TRANSPARENT_LUMINANCE_LIMIT;
+}
+
+function materialLooksTransparent(mat,mesh=null){
+    if(!mat)return false;
+
+    const originalAlpha=(typeof mat.alpha==="number")?mat.alpha:1;
+
+    const alreadyTransparent=
+        originalAlpha<0.999||
+        mat.transparencyMode===BABYLON.Material.MATERIAL_ALPHABLEND||
+        mat.transparencyMode===BABYLON.Material.MATERIAL_ALPHATESTANDBLEND||
+        (mat.needAlphaBlending&&mat.needAlphaBlending())||
+        (mat.needAlphaTesting&&mat.needAlphaTesting());
+
+    const hasTextureAlpha=
+        (mat.albedoTexture&&(mat.albedoTexture.hasAlpha||mat.albedoTexture.getAlphaFromRGB))||
+        (mat.diffuseTexture&&(mat.diffuseTexture.hasAlpha||mat.diffuseTexture.getAlphaFromRGB))||
+        !!mat.opacityTexture;
+
+    const namedTransparent=materialNameLooksTransparent(mat,mesh);
+
+    // Certains exports Rhino/GLB perdent l'alpha : le vitrage arrive noir opaque.
+    // Dans ce cas, si le matériau/mesh porte un nom de vitrage OU utilise une texture alpha,
+    // on le récupère en matériau transparent clair.
+    const blackLostGlass=materialIsVeryDark(mat)&&(namedTransparent||hasTextureAlpha);
+
+    return alreadyTransparent||hasTextureAlpha||namedTransparent||blackLostGlass;
+}
+
+function getMaterialBaseColor(mat){
+    if(!mat)return new BABYLON.Color3(0.82,0.90,0.96);
+
+    let color=null;
+
+    if(mat.albedoColor){
+        color=mat.albedoColor.clone();
+    }else if(mat.diffuseColor){
+        color=mat.diffuseColor.clone();
+    }else if(mat.emissiveColor){
+        color=mat.emissiveColor.clone();
+    }
+
+    if(!color){
+        color=new BABYLON.Color3(0.82,0.90,0.96);
+    }
+
+    // Certains vitrages GLB/Rhino sortent avec une base noire.
+    // Si on garde cette couleur, l'objet devient noir au lieu de transparent.
+    const luminance=color.r*0.2126+color.g*0.7152+color.b*0.0722;
+    if(luminance<0.12){
+        color=new BABYLON.Color3(0.82,0.90,0.96);
+    }
+
+    return color;
+}
+
+function getTransparentAlpha(mat,mesh=null){
+    const originalAlpha=(mat&&typeof mat.alpha==="number")?mat.alpha:1;
+
+    if(originalAlpha<0.999){
+        return BABYLON.Scalar.Clamp(originalAlpha,0.16,0.72);
+    }
+
+    return CONFIG.FORCED_TRANSPARENT_ALPHA;
+}
+
+function getTransparentViewerMaterial(sourceMat,mesh=null){
+    const key=(sourceMat&&(sourceMat.name||sourceMat.id))?sourceMat.name||sourceMat.id:(mesh?mesh.name:"transparent");
+    const alpha=getTransparentAlpha(sourceMat,mesh);
+    const color=getMaterialBaseColor(sourceMat);
+    const cacheKey=key+"_"+alpha.toFixed(2)+"_"+color.r.toFixed(2)+"_"+color.g.toFixed(2)+"_"+color.b.toFixed(2);
+
+    if(transparentViewerMaterials[cacheKey]){
+        return transparentViewerMaterials[cacheKey];
+    }
+
+    const mat=new BABYLON.StandardMaterial("viewer_transparent_"+cacheKey,scene);
+    mat.diffuseColor=color;
+    mat.emissiveColor=color.scale(0.18);
+    mat.specularColor=new BABYLON.Color3(0.18,0.18,0.18);
+    mat.alpha=alpha;
+    mat.backFaceCulling=false;
+    mat.twoSidedLighting=true;
+    mat.transparencyMode=BABYLON.Material.MATERIAL_ALPHABLEND;
+    mat.needDepthPrePass=true;
+    mat.separateCullingPass=false;
+    mat.forceDepthWrite=false;
+    mat.disableLighting=false;
+    mat.metadata={isViewerTransparent:true};
+
+    // Important : on ne reprend pas les textures PBR/noires du GLB.
+    // Elles sont souvent la cause des vitrages affichés noirs.
+    transparentViewerMaterials[cacheKey]=mat;
+    return mat;
+}
+
+function simplifyOriginalMaterial(mat,mesh=null){
+    if(!mat)return mat;
+
+    const shouldBeTransparent=materialLooksTransparent(mat,mesh);
+
+    if(shouldBeTransparent){
+        return getTransparentViewerMaterial(mat,mesh);
+    }
+
+    if(mat.getClassName&&mat.getClassName().toLowerCase().includes("pbr")){
+        mat.environmentIntensity=0;
+        mat.metallic=0;
+        mat.roughness=1;
+        mat.disableLighting=false;
+    }
+
+    if(mat.reflectionTexture){
+        mat.reflectionTexture=null;
+    }
+
+    if(mat.environmentTexture){
+        mat.environmentTexture=null;
+    }
+
+    if(mat.specularTexture){
+        mat.specularTexture=null;
+    }
+
+    if(mat.specularColor){
+        mat.specularColor=new BABYLON.Color3(0,0,0);
+    }
+
+    mat.backFaceCulling=false;
+    mat.twoSidedLighting=true;
+
+    return mat;
+}
+
+function updateRenderToggle(){
+    const toggle=document.getElementById("renderModeToggle");
+    const text=toggle.querySelector(".toggleText");
+
+    if(renderModeBasic){
+        toggle.classList.add("active");
+        text.innerHTML="BASIC";
+    }else{
+        toggle.classList.remove("active");
+        text.innerHTML="OPT";
+    }
+}
+
+function applyRenderMode(){
+    // IMPORTANT : ce toggle ne reconstruit plus les matériaux à chaud.
+    // On évite ainsi les gros freezes quand le modèle est lourd ou publié en ligne.
+    scene.environmentTexture=null;
+    scene.reflectionProbesEnabled=false;
+    scene.skipPointerMovePicking=true;
+
+    if(renderModeBasic){
+        engine.setHardwareScalingLevel(CONFIG.HARDWARE_SCALE_BASIC);
+
+        scene.imageProcessingConfiguration.exposure=1.0;
+        scene.imageProcessingConfiguration.contrast=1.1;
+        scene.imageProcessingConfiguration.toneMappingEnabled=false;
+
+        sun.intensity=0.95;
+        hemi.intensity=1.15;
+    }else{
+        engine.setHardwareScalingLevel(CONFIG.HARDWARE_SCALE_OPTIMUM);
+
+        scene.imageProcessingConfiguration.exposure=1.15;
+        scene.imageProcessingConfiguration.contrast=1.8;
+        scene.imageProcessingConfiguration.toneMappingEnabled=true;
+        scene.imageProcessingConfiguration.toneMappingType=BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
+
+        sun.intensity=CONFIG.SUN_INTENSITY;
+        hemi.intensity=CONFIG.HEMI_INTENSITY;
+    }
+
+    cameraDirty=true;
+    updateRenderToggle();
+
+    requestAnimationFrame(()=>{
+        engine.resize();
+    });
+}
+
+function toggleRenderMode(){
+    renderModeBasic=!renderModeBasic;
+    updateRenderToggle();
+
+    requestAnimationFrame(()=>{
+        applyRenderMode();
+    });
+}
+
+let sceneCenter=BABYLON.Vector3.Zero();
+let defaultRadius=80;
+let modelRadius=80;
+
+let circulationCenter=BABYLON.Vector3.Zero();
+let circulationRadiusXZ=20;
+let circulationRadiusY=10;
+
+let cameraDirty=true;
+
+const annotations=[];
+const allModelMeshes=[];
+const originalMaterials=new Map();
+const basicMaterials={};
+const transparentViewerMaterials={};
+let renderModeBasic=CONFIG.BASIC_MODE;
+let renderFrameCounter=0;
+let activeModelLabel=CONFIG.DEFAULT_MODEL_LABEL;
+let modelLoadToken=0;
+const currentModelNodes=[];
+
+const rhinoLayers={
+    BLOCS:[],
+    BATIMENT:[],
+    CIRCULATIONS:[],
+    ABORD:[]
+};
+
+const visibility={
+    blocs:true,
+    batiment:true,
+    circulations:true,
+    abord:false,
+    labels:true,
+    events:true
+};
+
+camera.onViewMatrixChangedObservable.add(()=>{cameraDirty=true;});
+
+function smoothStep(t){return t*t*(3-2*t);}
+
+
+function updateCameraNavigationSpeed(){
+    const referenceRadius=Math.max(defaultRadius||80,1);
+
+    const distanceFactor=BABYLON.Scalar.Clamp(
+        camera.radius/referenceRadius,
+        0.35,
+        2.50
+    );
+
+    const t=BABYLON.Scalar.Clamp(
+        (distanceFactor-0.35)/(2.50-0.35),
+        0,
+        1
+    );
+
+    const eased=smoothStep(t);
+
+    // Dans Babylon : valeur plus basse = zoom plus rapide.
+    camera.wheelPrecision=BABYLON.Scalar.Lerp(4,0.2,eased);
+    camera.pinchPrecision=BABYLON.Scalar.Lerp(42,18,eased);
+
+    // Dans Babylon : valeur plus basse = pan plus rapide.
+    camera.panningSensibility=BABYLON.Scalar.Lerp(100,20,eased);
+}
+
+function roundRect(ctx,x,y,w,h,r){
+    ctx.beginPath();
+    ctx.moveTo(x+r,y);
+    ctx.lineTo(x+w-r,y);
+    ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+    ctx.lineTo(x+w,y+h-r);
+    ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+    ctx.lineTo(x+r,y+h);
+    ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+    ctx.lineTo(x,y+r);
+    ctx.quadraticCurveTo(x,y,x+r,y);
+    ctx.closePath();
+}
+
+function updateToggle(id,state){
+    const toggle=document.getElementById(id);
+    const text=toggle.querySelector(".toggleText");
+
+    if(state){
+        toggle.classList.add("active");
+        text.innerHTML="ON";
+    }else{
+        toggle.classList.remove("active");
+        text.innerHTML="OFF";
+    }
+}
+
+function toggleLayer(layer){
+    const key=layer.toLowerCase();
+
+    visibility[key]=!visibility[key];
+
+    rhinoLayers[layer].forEach(mesh=>{
+        mesh.setEnabled(visibility[key]);
+    });
+
+    updateToggle(key+"Toggle",visibility[key]);
+
+    if(layer==="CIRCULATIONS"){
+        visibility.labels=visibility.circulations;
+        updateToggle("labelsToggle",visibility.labels);
+        cameraDirty=true;
+    }
+}
+
+function toggleAnnotations(){
+    visibility.labels=!visibility.labels;
+    updateToggle("labelsToggle",visibility.labels);
+    cameraDirty=true;
+}
+
+function smoothCameraMove(target,radius){
+    camera.animations=[];
+
+    const animTarget=new BABYLON.Animation(
+        "animTarget",
+        "target",
+        60,
+        BABYLON.Animation.ANIMATIONTYPE_VECTOR3,
+        BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+    );
+
+    const animRadius=new BABYLON.Animation(
+        "animRadius",
+        "radius",
+        60,
+        BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+        BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+    );
+
+    animTarget.setKeys([
+        {frame:0,value:camera.target.clone()},
+        {frame:60,value:target.clone()}
+    ]);
+
+    animRadius.setKeys([
+        {frame:0,value:camera.radius},
+        {frame:60,value:radius}
+    ]);
+
+    camera.animations.push(animTarget,animRadius);
+    scene.beginAnimation(camera,0,60,false);
+}
+
+function resetCamera(){
+    smoothCameraMove(sceneCenter.clone(),defaultRadius);
+}
+
+document.getElementById("resetBtn").onclick=()=>resetCamera();
+
+let lastClick=0;
+
+
+const EVENT_TYPES={
+    fire:{label:"FEU",icon:"🔥",color:"#ff3b30"},
+    smoke:{label:"FUMÉE",icon:"SMOKE",color:"#8e8e93"},
+    danger:{label:"DANGER",icon:"⚠️",color:"#ff9500"},
+    blocked:{label:"ACCÈS BLOQUÉ",icon:"⛔",color:"#d70015"},
+    victim:{label:"VICTIME",icon:"👤",color:"#5856d6"},
+    water:{label:"EAU",icon:"💧",color:"#007aff"}
+};
+
+
+
+const eventMarkers=[];
+const savedEventMarkersByView={};
+let suspendEventStorageSync=false;
+let eventDragState=null;
+let eventGhost=null;
+let lastEventPickMoveTime=0;
+let pendingEventPickFrame=false;
+
+function serializeEventMarker(marker){
+    return {
+        type:marker.type,
+        position:{x:marker.position.x,y:marker.position.y,z:marker.position.z},
+        normal:{x:marker.normal.x,y:marker.normal.y,z:marker.normal.z},
+        attachedMeshName:marker.attachedMeshName||""
+    };
+}
+
+function saveEventMarkersForLabel(label){
+    if(!label)return;
+    savedEventMarkersByView[label]=eventMarkers.map(marker=>serializeEventMarker(marker));
+}
+
+function syncCurrentViewEventStorage(){
+    if(suspendEventStorageSync)return;
+    saveEventMarkersForLabel(activeModelLabel);
+}
+
+function clearAllSavedEvents(){
+    Object.keys(savedEventMarkersByView).forEach(key=>delete savedEventMarkersByView[key]);
+    suspendEventStorageSync=true;
+    eventMarkers.slice().forEach(marker=>disposeEventMarker(marker));
+    suspendEventStorageSync=false;
+}
+
+function restoreSavedEventsForLabel(label){
+    const list=savedEventMarkersByView[label]||[];
+    if(!list.length)return;
+
+    suspendEventStorageSync=true;
+
+    list.forEach(item=>{
+        const position=new BABYLON.Vector3(item.position.x,item.position.y,item.position.z);
+        const normal=new BABYLON.Vector3(item.normal.x,item.normal.y,item.normal.z);
+
+        createEventMarker(
+            item.type,
+            position,
+            normal,
+            item.attachedMeshName?{name:item.attachedMeshName}:null
+        );
+    });
+
+    suspendEventStorageSync=false;
+    updateEventMarkersVisibility();
+    cameraDirty=true;
+}
+
+function getEventMarkerSize(){
+    const factor=CONFIG.EVENT_MARKER_SIZE_FACTOR||1;
+    return BABYLON.Scalar.Clamp((modelRadius||80)*0.075*factor,3.3,11.25);
+}
+
+function drawSmokeSymbol(ctx,cx,cy,scale){
+    ctx.save();
+    ctx.globalAlpha=0.98;
+
+    const blobs=[
+        {x:0,y:92,r:36,a:1.00},
+        {x:-16,y:52,r:46,a:.96},
+        {x:19,y:28,r:56,a:.92},
+        {x:-20,y:-16,r:62,a:.88},
+        {x:30,y:-35,r:72,a:.84},
+        {x:-6,y:-86,r:78,a:.78}
+    ];
+
+    blobs.forEach(b=>{
+        const g=ctx.createRadialGradient(
+            cx+(b.x-12)*scale,
+            cy+(b.y-12)*scale,
+            b.r*0.12*scale,
+            cx+b.x*scale,
+            cy+b.y*scale,
+            b.r*scale
+        );
+        g.addColorStop(0,"rgba(210,210,212,"+b.a+")");
+        g.addColorStop(0.45,"rgba(112,113,116,"+b.a+")");
+        g.addColorStop(1,"rgba(38,39,42,"+(b.a*.92)+")");
+        ctx.fillStyle=g;
+        ctx.beginPath();
+        ctx.arc(cx+b.x*scale,cy+b.y*scale,b.r*scale,0,Math.PI*2);
+        ctx.fill();
+    });
+
+    ctx.fillStyle="rgba(50,51,54,.95)";
+    roundRect(ctx,cx-18*scale,cy+119*scale,36*scale,28*scale,4*scale);
+    ctx.fill();
+    ctx.restore();
+}
+
+function createEventTexture(type){
+    const data=EVENT_TYPES[type]||EVENT_TYPES.danger;
+    const texture=new BABYLON.DynamicTexture("event_dt",{width:512,height:512},scene,true);
+    texture.hasAlpha=true;
+
+    const ctx=texture.getContext();
+    ctx.clearRect(0,0,512,512);
+
+    ctx.shadowColor="rgba(0,0,0,.30)";
+    ctx.shadowBlur=34;
+    ctx.shadowOffsetY=16;
+
+    ctx.fillStyle=data.color;
+    ctx.beginPath();
+    ctx.arc(256,256,188,0,Math.PI*2);
+    ctx.fill();
+
+    ctx.shadowBlur=0;
+    ctx.shadowOffsetY=0;
+
+    ctx.lineWidth=14;
+    ctx.strokeStyle="rgba(255,255,255,.94)";
+    ctx.beginPath();
+    ctx.arc(256,256,188,0,Math.PI*2);
+    ctx.stroke();
+
+    if(type==="smoke"){
+        drawSmokeSymbol(ctx,256,215,0.82);
+    }else{
+        ctx.fillStyle="white";
+        ctx.font="700 172px Arial";
+        ctx.textAlign="center";
+        ctx.textBaseline="middle";
+        ctx.fillText(data.icon,256,238);
+    }
+
+    ctx.fillStyle="white";
+    ctx.font="900 44px Arial";
+    ctx.textAlign="center";
+    ctx.textBaseline="middle";
+    ctx.fillText(data.label,256,378);
+
+    texture.update();
+    return texture;
+}
+function createEventMarker(type,position,normal,pickedMesh){
+    const size=getEventMarkerSize();
+    const texture=createEventTexture(type);
+
+    const plane=BABYLON.MeshBuilder.CreatePlane(
+        "event_marker_"+type,
+        {width:size,height:size},
+        scene
+    );
+
+    const offsetNormal=(normal&&normal.length&&normal.length()>0.001)?normal.normalize():BABYLON.Vector3.Up();
+    const surfaceOffset=Math.max(size*CONFIG.EVENT_MARKER_SURFACE_OFFSET_FACTOR,(modelRadius||80)*0.0015);
+    plane.position=position.add(offsetNormal.scale(surfaceOffset));
+    plane.billboardMode=BABYLON.Mesh.BILLBOARDMODE_ALL;
+    plane.renderingGroupId=2;
+    plane.isPickable=true;
+
+    const mat=new BABYLON.StandardMaterial("event_marker_mat",scene);
+    mat.diffuseTexture=texture;
+    mat.alpha=1;
+    mat.emissiveColor=BABYLON.Color3.White();
+    mat.disableLighting=true;
+    mat.useAlphaFromDiffuseTexture=true;
+    mat.backFaceCulling=false;
+    plane.material=mat;
+
+    const line=BABYLON.MeshBuilder.CreateLines(
+        "event_marker_line",
+        {points:[position.clone(),plane.position.clone()],updatable:true},
+        scene
+    );
+    line.color=new BABYLON.Color3(.12,.12,.12);
+    line.alpha=.45;
+    line.isPickable=false;
+    line.renderingGroupId=1;
+
+    const marker={
+        type,
+        plane,
+        line,
+        material:mat,
+        texture,
+        position:position.clone(),
+        normal:offsetNormal.clone(),
+        attachedMeshName:pickedMesh?pickedMesh.name:"",
+        attachedMeshUniqueId:pickedMesh?pickedMesh.uniqueId:null
+    };
+    plane.metadata={eventMarker:marker};
+    eventMarkers.push(marker);
+    updateEventMarkersVisibility();
+    syncCurrentViewEventStorage();
+    return marker;
+}
+
+function moveEventMarker(marker,position,normal,pickedMesh){
+    if(!marker||!marker.plane)return;
+
+    const size=getEventMarkerSize();
+    const offsetNormal=(normal&&normal.length&&normal.length()>0.001)?normal.normalize():BABYLON.Vector3.Up();
+
+    const surfaceOffset=Math.max(size*CONFIG.EVENT_MARKER_SURFACE_OFFSET_FACTOR,(modelRadius||80)*0.0015);
+
+    marker.position=position.clone();
+    marker.normal=offsetNormal.clone();
+    marker.attachedMeshName=pickedMesh?pickedMesh.name:marker.attachedMeshName;
+    marker.attachedMeshUniqueId=pickedMesh?pickedMesh.uniqueId:marker.attachedMeshUniqueId;
+    marker.plane.position=position.add(offsetNormal.scale(surfaceOffset));
+
+    if(marker.line){
+        BABYLON.MeshBuilder.CreateLines(
+            null,
+            {points:[marker.position,marker.plane.position],instance:marker.line}
+        );
+    }
+
+    syncCurrentViewEventStorage();
+}
+
+function disposeEventMarker(marker){
+    const index=eventMarkers.indexOf(marker);
+    if(index>=0)eventMarkers.splice(index,1);
+
+    if(marker.texture)marker.texture.dispose();
+    if(marker.material)marker.material.dispose();
+    if(marker.plane)marker.plane.dispose();
+    if(marker.line)marker.line.dispose();
+
+    syncCurrentViewEventStorage();
+}
+
+function disposeAllEventMarkers(){
+    eventMarkers.slice().forEach(marker=>disposeEventMarker(marker));
+}
+
+function updateEventMarkersVisibility(){
+    eventMarkers.forEach(marker=>{
+        const visible=visibility.events!==false;
+        if(marker.plane)marker.plane.setEnabled(visible);
+        if(marker.line)marker.line.setEnabled(visible);
+    });
+}
+
+function updateEventMarkerSizes(){
+    const size=getEventMarkerSize();
+    eventMarkers.forEach(marker=>{
+        if(marker.plane)marker.plane.scaling.setAll(1);
+        if(marker.position&&marker.normal){
+            const surfaceOffset=Math.max(size*CONFIG.EVENT_MARKER_SURFACE_OFFSET_FACTOR,(modelRadius||80)*0.0015);
+            marker.plane.position=marker.position.add(marker.normal.scale(surfaceOffset));
+            if(marker.line){
+                BABYLON.MeshBuilder.CreateLines(
+                    null,
+                    {points:[marker.position,marker.plane.position],instance:marker.line}
+                );
+            }
+        }
+    });
+}
+
+function createEventGhost(type,x,y){
+    removeEventGhost();
+    const ghost=document.createElement("div");
+    ghost.className="eventGhost";
+
+    if(type==="smoke"){
+        const icon=document.createElement("span");
+        icon.className="eventIcon smokePanelIcon";
+        icon.innerHTML='<span class="smokeBlob s1"></span><span class="smokeBlob s2"></span><span class="smokeBlob s3"></span><span class="smokeBlob s4"></span>';
+        icon.style.width="62px";
+        icon.style.height="62px";
+        ghost.appendChild(icon);
+    }else{
+        ghost.textContent=(EVENT_TYPES[type]||EVENT_TYPES.danger).icon;
+        ghost.style.background=(EVENT_TYPES[type]||EVENT_TYPES.danger).color;
+        ghost.style.color="white";
+        ghost.style.boxShadow="inset 0 0 0 4px rgba(255,255,255,.95),0 12px 30px rgba(0,0,0,.20)";
+    }
+
+    document.body.appendChild(ghost);
+    eventGhost=ghost;
+    moveEventGhost(x,y);
+}
+
+function moveEventGhost(x,y){
+    if(eventGhost){
+        eventGhost.style.left=x+"px";
+        eventGhost.style.top=y+"px";
+    }
+}
+
+function removeEventGhost(){
+    if(eventGhost){
+        eventGhost.remove();
+        eventGhost=null;
+    }
+}
+
+function isPointerInsideElement(event,element){
+    if(!element)return false;
+    const rect=element.getBoundingClientRect();
+    return event.clientX>=rect.left&&event.clientX<=rect.right&&event.clientY>=rect.top&&event.clientY<=rect.bottom;
+}
+
+function getCanvasPointerPosition(event){
+    const rect=canvas.getBoundingClientRect();
+    const x=event.clientX-rect.left;
+    const y=event.clientY-rect.top;
+
+    if(x<0||y<0||x>rect.width||y>rect.height){
+        return null;
+    }
+
+    return {x,y};
+}
+
+function isModelPickableMesh(mesh){
+    return !!(
+        mesh&&
+        allModelMeshes.includes(mesh)&&
+        mesh.isEnabled&&mesh.isEnabled()&&
+        mesh.isVisible!==false&&
+        mesh.isPickable&&
+        mesh.getTotalVertices&&
+        mesh.getTotalVertices()>0
+    );
+}
+
+function getPickNormal(pick){
+    if(!pick||!pick.pickedMesh||!pick.pickedPoint)return BABYLON.Vector3.Up();
+
+    if(pick.getNormal){
+        const n=pick.getNormal(true,true);
+        if(n&&n.length()>0.001){
+            const normal=n.normalize();
+            if(BABYLON.Vector3.Dot(normal,camera.position.subtract(pick.pickedPoint))<0){
+                normal.scaleInPlace(-1);
+            }
+            return normal;
+        }
+    }
+
+    const mesh=pick.pickedMesh;
+    const faceId=pick.faceId;
+
+    if(mesh&&typeof faceId==="number"&&faceId>=0){
+        const indices=mesh.getIndices();
+        const positions=mesh.getVerticesData(BABYLON.VertexBuffer.PositionKind);
+        const world=mesh.getWorldMatrix();
+
+        if(indices&&positions&&indices.length>faceId*3+2){
+            const i0=indices[faceId*3]*3;
+            const i1=indices[faceId*3+1]*3;
+            const i2=indices[faceId*3+2]*3;
+
+            const p0=BABYLON.Vector3.TransformCoordinates(new BABYLON.Vector3(positions[i0],positions[i0+1],positions[i0+2]),world);
+            const p1=BABYLON.Vector3.TransformCoordinates(new BABYLON.Vector3(positions[i1],positions[i1+1],positions[i1+2]),world);
+            const p2=BABYLON.Vector3.TransformCoordinates(new BABYLON.Vector3(positions[i2],positions[i2+1],positions[i2+2]),world);
+
+            const normal=BABYLON.Vector3.Cross(p1.subtract(p0),p2.subtract(p0));
+            if(normal.length()>0.001){
+                normal.normalize();
+                if(BABYLON.Vector3.Dot(normal,camera.position.subtract(pick.pickedPoint))<0){
+                    normal.scaleInPlace(-1);
+                }
+                return normal;
+            }
+        }
+    }
+
+    return BABYLON.Vector3.Up();
+}
+
+function scoreSurfacePick(pick,sampleDistance){
+    if(!pick||!pick.hit||!pick.pickedPoint||!pick.pickedMesh)return Infinity;
+
+    // Priorité : vraie intersection proche de la caméra, puis proximité avec le doigt/souris.
+    // Cela évite qu'un grand mesh joint attrape une face lointaine par erreur.
+    return (pick.distance||0)+(sampleDistance||0)*0.025;
+}
+
+function pickModelAtScreenXY(x,y){
+    const samples=[{dx:0,dy:0,d:0}];
+    const radius=CONFIG.EVENT_PICK_RADIUS_PIXELS||18;
+    const step=CONFIG.EVENT_PICK_SAMPLE_STEP||6;
+
+    for(let r=step;r<=radius;r+=step){
+        samples.push(
+            {dx:r,dy:0,d:r},{dx:-r,dy:0,d:r},{dx:0,dy:r,d:r},{dx:0,dy:-r,d:r},
+            {dx:r,dy:r,d:r*1.414},{dx:-r,dy:r,d:r*1.414},{dx:r,dy:-r,d:r*1.414},{dx:-r,dy:-r,d:r*1.414}
+        );
+    }
+
+    let best=null;
+    let bestScore=Infinity;
+
+    for(const sample of samples){
+        const sx=x+sample.dx;
+        const sy=y+sample.dy;
+
+        const ray=scene.createPickingRay(sx,sy,BABYLON.Matrix.Identity(),camera,false);
+
+        // 1) Multi-pick : très fiable sur les meshes fusionnés.
+        const hits=scene.multiPickWithRay(
+            ray,
+            mesh=>isModelPickableMesh(mesh)
+        );
+
+        if(hits&&hits.length){
+            for(const hit of hits){
+                if(!hit||!hit.hit||!hit.pickedPoint||!hit.pickedMesh)continue;
+                const score=scoreSurfacePick(hit,sample.d);
+                if(score<bestScore){
+                    best=hit;
+                    bestScore=score;
+                }
+            }
+        }
+
+        // 2) Pick classique en secours, avec fastCheck=false pour ne pas se contenter de la bounding box.
+        const fallback=scene.pick(
+            sx,
+            sy,
+            mesh=>isModelPickableMesh(mesh),
+            false,
+            camera
+        );
+
+        if(fallback&&fallback.hit&&fallback.pickedPoint&&fallback.pickedMesh){
+            const score=scoreSurfacePick(fallback,sample.d);
+            if(score<bestScore){
+                best=fallback;
+                bestScore=score;
+            }
+        }
+    }
+
+    if(best){
+        best.surfaceNormal=getPickNormal(best);
+    }
+
+    return best;
+}
+
+function pickModelAtPointer(event){
+    const pointer=getCanvasPointerPosition(event);
+    if(!pointer)return null;
+    return pickModelAtScreenXY(pointer.x,pointer.y);
+}
+
+function updateLastValidEventPick(event){
+    if(!eventDragState)return;
+    const pick=pickModelAtPointer(event);
+    if(pick&&pick.hit&&pick.pickedPoint){
+        lastValidEventPick=pick;
+    }
+}
+
+function setEventDeleteZoneActive(active){
+    const zone=document.getElementById("eventDeleteZone");
+    if(zone)zone.classList.toggle("active",!!active);
+}
+
+function startLibraryEventDrag(type,event){
+    event.preventDefault();
+    event.stopPropagation();
+    lastValidEventPick=null;
+    eventDragState={mode:"create",type};
+    createEventGhost(type,event.clientX,event.clientY);
+    setEventDeleteZoneActive(false);
+    camera.detachControl(canvas);
+}
+
+function startExistingEventDrag(marker,event){
+    event.preventDefault();
+    event.stopPropagation();
+    lastValidEventPick=null;
+    eventDragState={mode:"move",marker,type:marker.type};
+    createEventGhost(marker.type,event.clientX,event.clientY);
+    setEventDeleteZoneActive(false);
+    camera.detachControl(canvas);
+}
+
+function finishEventDrag(event){
+    if(!eventDragState)return;
+
+    const state=eventDragState;
+    eventDragState=null;
+    removeEventGhost();
+
+    const deleteZone=document.getElementById("eventDeleteZone");
+    const droppedOnLibrary=isPointerInsideElement(event,deleteZone)||isPointerInsideElement(event,document.getElementById("eventLibrary"));
+    setEventDeleteZoneActive(false);
+
+    if(state.mode==="move"&&droppedOnLibrary){
+        disposeEventMarker(state.marker);
+        camera.attachControl(canvas,true);
+        return;
+    }
+
+    const pick=pickModelAtPointer(event)||lastValidEventPick;
+    if(pick&&pick.hit&&pick.pickedPoint){
+        const normal=pick.surfaceNormal||getPickNormal(pick);
+        if(state.mode==="create"){
+            createEventMarker(state.type,pick.pickedPoint,normal,pick.pickedMesh);
+        }else if(state.mode==="move"){
+            moveEventMarker(state.marker,pick.pickedPoint,normal,pick.pickedMesh);
+        }
+    }
+
+    lastValidEventPick=null;
+    camera.attachControl(canvas,true);
+}
+
+function initEventLibrary(){
+    const clearBtn=document.getElementById("clearAllEventsBtn");
+    if(clearBtn){
+        clearBtn.addEventListener("click",()=>{
+            clearAllSavedEvents();
+        });
+    }
+
+    document.querySelectorAll(".eventItem").forEach(item=>{
+        item.addEventListener("pointerdown",event=>{
+            startLibraryEventDrag(item.dataset.eventType,event);
+        });
+    });
+
+    document.addEventListener("pointermove",event=>{
+        if(!eventDragState)return;
+
+        // IMPORTANT PERFORMANCE :
+        // On ne fait AUCUN picking 3D pendant le déplacement.
+        // Sur la VUE MASSE, le mesh joint est très grand et un multi-pick à chaque mouvement
+        // rendait le drag saccadé.
+        // La surface est maintenant recherchée uniquement au relâchement du doigt/souris.
+        moveEventGhost(event.clientX,event.clientY);
+
+        const deleteZone=document.getElementById("eventDeleteZone");
+        setEventDeleteZoneActive(isPointerInsideElement(event,deleteZone)||isPointerInsideElement(event,document.getElementById("eventLibrary")));
+    });
+
+    document.addEventListener("pointerup",event=>{
+        finishEventDrag(event);
+    });
+}
+
+
+scene.onPointerObservable.add(pointerInfo=>{
+    if(pointerInfo.type!==BABYLON.PointerEventTypes.POINTERDOWN)return;
+    if(pointerInfo.event.button!==0)return;
+
+    const pick=scene.pick(scene.pointerX,scene.pointerY);
+
+    if(pick.hit&&pick.pickedMesh&&pick.pickedMesh.metadata&&pick.pickedMesh.metadata.eventMarker){
+        startExistingEventDrag(pick.pickedMesh.metadata.eventMarker,pointerInfo.event);
+        return;
+    }
+
+    // Sur écran tactile, on évite le faux double-clic qui gênait la navigation.
+    if(pointerInfo.event.pointerType==="touch")return;
+
+    const now=performance.now();
+    const isDouble=now-lastClick<300;
+
+    lastClick=now;
+
+    if(!isDouble)return;
+    if(!pick.hit||!pick.pickedMesh)return;
+
+    const mesh=pick.pickedMesh;
+    if(!mesh.getBoundingInfo)return;
+
+    const bounds=mesh.getBoundingInfo().boundingBox;
+    const center=bounds.centerWorld.clone();
+    const size=bounds.extendSizeWorld.length();
+
+    smoothCameraMove(center,Math.max(size*4.5,3));
+});
+
+function getNextPowerOfTwo(value){
+    return Math.pow(2,Math.ceil(Math.log2(value)));
+}
+
+function getBillboardTextureWidth(text){
+    const measureCanvas=document.createElement("canvas");
+    const measureCtx=measureCanvas.getContext("2d");
+    measureCtx.font="700 86px Arial";
+
+    const textWidth=measureCtx.measureText(text).width;
+    const rawWidth=Math.ceil(textWidth+160);
+
+    return BABYLON.Scalar.Clamp(
+        getNextPowerOfTwo(rawWidth),
+        1024,
+        4096
+    );
+}
+
+function drawPremiumBillboard(ctx,type,text,width,height){
+    ctx.clearRect(0,0,width,height);
+
+    let bg="rgba(255,255,255,1)";
+    let txt="#111";
+    let stroke="rgba(255,255,255,1)";
+
+    if(type==="esc"){
+        bg="rgba(255,59,48,1)";
+        txt="white";
+        stroke="rgba(255,255,255,.38)";
+    }
+
+    if(type==="asc"){
+        bg="rgba(0,122,255,1)";
+        txt="white";
+        stroke="rgba(255,255,255,.38)";
+    }
+
+    if(type==="dot"){
+        bg="rgba(255,255,255,1)";
+        txt="#111";
+        stroke="rgba(0,0,0,.18)";
+    }
+
+    if(type==="street"){
+        // Plaque de rue parisienne : fond bleu, texte blanc, contour vert.
+        bg="rgba(10,35,96,1)";
+        txt="white";
+        stroke="rgba(34,105,42,1)";
+    }
+
+    const fontSize=86;
+    const paddingX=86;
+    const paddingY=22;
+    const boxHeight=height-(paddingY*2);
+    const radius=46;
+
+    ctx.font="700 "+fontSize+"px Arial";
+    ctx.textAlign="center";
+    ctx.textBaseline="middle";
+
+    const metrics=ctx.measureText(text);
+    const textWidth=metrics.width;
+
+    // Boîte visuelle légèrement plus grande que le texte,
+    // tout en restant centrée dans la texture.
+    const boxWidth=Math.min(
+        Math.max(textWidth+(paddingX*2),260),
+        width-44
+    );
+
+    const boxX=(width-boxWidth)/2;
+    const boxY=paddingY;
+
+    ctx.shadowColor="rgba(0,0,0,.18)";
+    ctx.shadowBlur=28;
+    ctx.shadowOffsetY=10;
+
+    ctx.fillStyle=bg;
+    ctx.strokeStyle=stroke;
+    ctx.lineWidth=type==="street"?16:4;
+
+    roundRect(ctx,boxX,boxY,boxWidth,boxHeight,radius);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.shadowBlur=0;
+    ctx.shadowOffsetY=0;
+
+    ctx.fillStyle=txt;
+    ctx.fillText(text,width/2,height/2);
+}
+function createBillboard(mesh,center){
+    if(!mesh.name)return;
+
+    const n=mesh.name.toLowerCase().trim();
+
+    // Reconnaissance des labels :
+    // - ESC / ASC
+    // - labels spéciaux R / T / M / S
+    // - labels qui commencent par un point : . / .M / .R / .01 etc.
+    // - plaques de rue parisiennes : noms d’objets Rhino qui commencent par "-"
+    const cleanName=n.replace(/^\.+/,"").replace(/^-+/,"");
+    const isDot=n.startsWith(".");
+    const isStreet=n.startsWith("-");
+
+    const isEsc=cleanName.includes("esc");
+    const isAsc=cleanName.includes("asc");
+
+    const isSpecial=
+        isDot||
+        cleanName.startsWith("r")||
+        cleanName.startsWith("t")||
+        cleanName.startsWith("m")||
+        cleanName.startsWith("s");
+
+    if(!isEsc&&!isAsc&&!isSpecial&&!isStreet)return;
+
+    const type=
+        isEsc?"esc":
+        isAsc?"asc":
+        isStreet?"street":
+        isDot?"dot":
+        "special";
+
+    const pos=mesh.getBoundingInfo().boundingBox.centerWorld.clone();
+
+    const displayText=type==="street"?mesh.name.replace(/^-+/,"").trim():mesh.name;
+    const textureWidth=getBillboardTextureWidth(displayText);
+    const textureHeight=256;
+
+    const texture=new BABYLON.DynamicTexture(
+        "dt",
+        {width:textureWidth,height:textureHeight},
+        scene,
+        true
+    );
+
+    texture.hasAlpha=true;
+
+    const ctx=texture.getContext();
+
+    drawPremiumBillboard(ctx,type,displayText,textureWidth,textureHeight);
+
+    texture.update();
+
+    const billboardHeight=1.3;
+    const billboardWidth=billboardHeight*(textureWidth/textureHeight);
+
+    const plane=BABYLON.MeshBuilder.CreatePlane(
+        "billboard",
+        {width:billboardWidth,height:billboardHeight},
+        scene
+    );
+
+    plane.billboardMode=BABYLON.Mesh.BILLBOARDMODE_ALL;
+    plane.isPickable=false;
+    plane.renderingGroupId=1;
+
+    const mat=new BABYLON.StandardMaterial("mat",scene);
+
+    mat.diffuseTexture=texture;
+    mat.alpha=1;
+    mat.emissiveColor=BABYLON.Color3.White();
+    mat.disableLighting=true;
+    mat.useAlphaFromDiffuseTexture=true;
+    mat.backFaceCulling=false;
+
+    plane.material=mat;
+
+    const localDir=pos.subtract(center).normalize();
+
+    let line=null;
+
+    if(type==="esc"||type==="asc"){
+        line=BABYLON.MeshBuilder.CreateLines(
+            "line",
+            {
+                points:[
+                    pos.clone(),
+                    pos.clone().add(new BABYLON.Vector3(0,0.01,0))
+                ],
+                updatable:true
+            },
+            scene
+        );
+
+        line.color=new BABYLON.Color3(.15,.15,.15);
+        line.alpha=.35;
+        line.isPickable=false;
+    }
+
+    annotations.push({
+        mesh,
+        plane,
+        line,
+        material:mat,
+        localDir,
+        circulationOuterPos:BABYLON.Vector3.Zero(),
+        type,
+        currentPos:pos.clone(),
+        currentScale:1
+    });
+}
+
+function computeCirculationBounds(){
+    const meshes=rhinoLayers.CIRCULATIONS;
+
+    if(!meshes.length){
+        circulationCenter=sceneCenter.clone();
+        circulationRadiusXZ=modelRadius*.35;
+        circulationRadiusY=modelRadius*.12;
+        return;
+    }
+
+    let minX=Infinity,minY=Infinity,minZ=Infinity;
+    let maxX=-Infinity,maxY=-Infinity,maxZ=-Infinity;
+
+    meshes.forEach(mesh=>{
+        const box=mesh.getBoundingInfo().boundingBox;
+        const c=box.centerWorld;
+        const e=box.extendSizeWorld;
+
+        minX=Math.min(minX,c.x-e.x);
+        minY=Math.min(minY,c.y-e.y);
+        minZ=Math.min(minZ,c.z-e.z);
+
+        maxX=Math.max(maxX,c.x+e.x);
+        maxY=Math.max(maxY,c.y+e.y);
+        maxZ=Math.max(maxZ,c.z+e.z);
+    });
+
+    circulationCenter=new BABYLON.Vector3(
+        (minX+maxX)/2,
+        (minY+maxY)/2,
+        (minZ+maxZ)/2
+    );
+
+    circulationRadiusXZ=Math.max(maxX-minX,maxZ-minZ)/2;
+
+    circulationRadiusY=Math.max(
+        (maxY-minY)/2,
+        modelRadius*.06
+    );
+}
+
+function organizeEscAscOutsideCirculations(){
+    const escAsc=annotations.filter(
+        a=>a.type==="esc"||a.type==="asc"
+    );
+
+    const outerRadiusXZ=
+        circulationRadiusXZ+
+        modelRadius*CONFIG.CIRCULATION_LABEL_MARGIN_FACTOR;
+
+    const outerRadiusY=
+        circulationRadiusY+
+        modelRadius*
+        CONFIG.CIRCULATION_LABEL_MARGIN_FACTOR*
+        CONFIG.CIRCULATION_VERTICAL_FACTOR;
+
+    escAsc.forEach(a=>{
+        const pos=a.mesh.getBoundingInfo().boundingBox.centerWorld;
+
+        let dir=pos.subtract(circulationCenter);
+
+        if(dir.length()<0.001){
+            dir=a.localDir.clone();
+        }
+
+        dir.normalize();
+
+        const dx=dir.x/outerRadiusXZ;
+        const dy=dir.y/outerRadiusY;
+        const dz=dir.z/outerRadiusXZ;
+
+        const t=1/Math.sqrt(dx*dx+dy*dy+dz*dz);
+
+        a.circulationOuterPos=circulationCenter.add(
+            dir.scale(t)
+        );
+    });
+}
+
+function getGlobalBlend(){
+    const circulationViewRadius=circulationRadiusXZ*2.2;
+
+    const raw=BABYLON.Scalar.Clamp(
+        (
+            camera.radius-
+            circulationViewRadius*
+            CONFIG.DISPERSION_START_FACTOR
+        )
+        /
+        (
+            circulationViewRadius*
+            CONFIG.DISPERSION_RANGE_FACTOR
+        ),
+        0,
+        1
+    );
+
+    return smoothStep(raw);
+}
+
+function getModelScreenFill(){
+    if(!modelRadius||!camera.radius)return 0;
+
+    const angularDiameter=2*Math.atan(modelRadius/camera.radius);
+    const screenFill=angularDiameter/camera.fov;
+
+    return BABYLON.Scalar.Clamp(screenFill,0,1);
+}
+
+function updateBillboards(){
+    if(!cameraDirty)return;
+
+    updateCameraNavigationSpeed();
+    updateAdaptiveOutlines();
+    updateEventMarkerSizes();
+    cameraDirty=false;
+
+    let visible=0;
+    const globalBlend=getGlobalBlend();
+    const modelScreenFill=getModelScreenFill();
+
+    annotations.forEach(a=>{
+        const pos=a.mesh.getBoundingInfo().boundingBox.centerWorld;
+        const dist=BABYLON.Vector3.Distance(camera.position,pos);
+        const isEscAsc=a.type==="esc"||a.type==="asc";
+
+        if(!visibility.labels){
+            a.plane.setEnabled(false);
+            if(a.line)a.line.setEnabled(false);
+            return;
+        }
+
+        let escAscFade=1;
+
+        if(isEscAsc){
+            escAscFade=BABYLON.Scalar.Clamp(
+                (modelScreenFill-CONFIG.ESC_ASC_SCREEN_FILL_START)
+                /
+                (CONFIG.ESC_ASC_SCREEN_FILL_FULL-CONFIG.ESC_ASC_SCREEN_FILL_START),
+                0,
+                1
+            );
+
+            escAscFade=smoothStep(escAscFade);
+
+            if(escAscFade<=0.01){
+                a.plane.setEnabled(false);
+                if(a.line)a.line.setEnabled(false);
+                return;
+            }
+        }
+
+        if(dist>CONFIG.LABEL_DISTANCE||visible>CONFIG.MAX_LABELS){
+            a.plane.setEnabled(false);
+            if(a.line)a.line.setEnabled(false);
+            return;
+        }
+
+        visible++;
+
+        a.plane.setEnabled(true);
+        if(a.line)a.line.setEnabled(true);
+
+        let closeTarget;
+
+        if(a.type==="special"||a.type==="dot"||a.type==="street"){
+            closeTarget=pos.add(a.localDir.scale(.28));
+        }else{
+            const closeDistance=BABYLON.Scalar.Clamp(
+                camera.radius*.14,
+                CONFIG.LABEL_NEAR_DISTANCE,
+                CONFIG.LABEL_FAR_DISTANCE
+            );
+
+            closeTarget=pos.add(a.localDir.scale(closeDistance));
+        }
+
+        let target=closeTarget;
+
+        if(a.type==="esc"||a.type==="asc"){
+            target=BABYLON.Vector3.Lerp(
+                closeTarget,
+                a.circulationOuterPos,
+                globalBlend
+            );
+        }
+
+        a.currentPos=BABYLON.Vector3.Lerp(
+            a.currentPos,
+            target,
+            CONFIG.LABEL_MOVE_LERP
+        );
+
+        a.plane.position.copyFrom(a.currentPos);
+
+        if(a.line){
+            BABYLON.MeshBuilder.CreateLines(
+                null,
+                {
+                    points:[pos,a.currentPos],
+                    instance:a.line
+                }
+            );
+        }
+
+        a.material.alpha=1;
+
+        if(a.line){
+            a.line.alpha=BABYLON.Scalar.Lerp(
+                .28,
+                CONFIG.LINE_ALPHA_FAR,
+                globalBlend
+            )*escAscFade;
+        }
+
+        const closeScale=BABYLON.Scalar.Clamp(
+            camera.radius/80,
+            .45,
+            1.9
+        );
+
+        const farScale=BABYLON.Scalar.Clamp(
+            camera.radius/145,
+            .75,
+            1.25
+        );
+
+        let scale=BABYLON.Scalar.Lerp(
+            closeScale,
+            farScale,
+            globalBlend
+        )*CONFIG.LABEL_SCALE_FACTOR;
+
+        // Labels spéciaux et labels point : même taille que ESC / ASC.
+        // Plaques de rue : 50% plus grandes pour rester très visibles.
+        if(a.type==="street"){
+            scale*=CONFIG.STREET_LABEL_SCALE_FACTOR;
+        }
+
+        a.currentScale=BABYLON.Scalar.Lerp(
+            a.currentScale,
+            scale,
+            CONFIG.LABEL_MOVE_LERP
+        );
+
+        a.plane.scaling.setAll(a.currentScale);
+    });
+}
+
+
+function getCameraState(){
+    return {
+        alpha:camera.alpha,
+        beta:camera.beta,
+        radius:camera.radius,
+        target:camera.target.clone()
+    };
+}
+
+function restoreCameraState(state){
+    if(!state)return;
+
+    camera.alpha=state.alpha;
+    camera.beta=state.beta;
+    camera.radius=state.radius;
+    camera.target=state.target.clone();
+
+    cameraDirty=true;
+}
+
+function updateViewButtons(loadingLabel=null){
+    document.querySelectorAll(".viewBtn").forEach(btn=>{
+        const label=btn.dataset.modelLabel;
+        btn.classList.toggle("active",label===activeModelLabel);
+        btn.classList.toggle("loading",loadingLabel!==null);
+    });
+}
+
+function setLoaderVisible(visible,message="Chargement du modèle"){
+    const loader=document.getElementById("loader");
+    const card=loader.querySelector(".loaderCard");
+    card.textContent=message;
+
+    if(visible){
+        loader.classList.remove("hidden");
+    }else{
+        loader.classList.add("hidden");
+    }
+}
+
+function disposeCurrentModel(){
+    suspendEventStorageSync=true;
+    disposeAllEventMarkers();
+    suspendEventStorageSync=false;
+
+    annotations.forEach(a=>{
+        if(a.material){
+            if(a.material.diffuseTexture)a.material.diffuseTexture.dispose();
+            a.material.dispose();
+        }
+        if(a.plane)a.plane.dispose();
+        if(a.line)a.line.dispose();
+    });
+
+    annotations.length=0;
+
+    allModelMeshes.length=0;
+    originalMaterials.clear();
+
+    Object.keys(rhinoLayers).forEach(key=>{
+        rhinoLayers[key].length=0;
+    });
+
+    currentModelNodes.forEach(node=>{
+        if(node&&!node.isDisposed())node.dispose(false,true);
+    });
+
+    currentModelNodes.length=0;
+
+    sceneCenter=BABYLON.Vector3.Zero();
+    defaultRadius=80;
+    modelRadius=80;
+    circulationCenter=BABYLON.Vector3.Zero();
+    circulationRadiusXZ=20;
+    circulationRadiusY=10;
+    cameraDirty=true;
+}
+
+function applyLayerVisibilityToLoadedModel(){
+    rhinoLayers.BLOCS.forEach(mesh=>mesh.setEnabled(visibility.blocs));
+    rhinoLayers.BATIMENT.forEach(mesh=>mesh.setEnabled(visibility.batiment));
+    rhinoLayers.CIRCULATIONS.forEach(mesh=>mesh.setEnabled(visibility.circulations));
+    rhinoLayers.ABORD.forEach(mesh=>mesh.setEnabled(visibility.abord));
+}
+
+async function importGlbWithFallback(fileList){
+    const files=Array.isArray(fileList)?fileList:[fileList];
+    let lastError=null;
+
+    for(const file of files){
+        try{
+            return await BABYLON.SceneLoader.ImportMeshAsync(
+                "",
+                "",
+                file.startsWith("./")?file:"./"+file,
+                scene
+            );
+        }catch(err){
+            lastError=err;
+            console.warn("Chargement impossible pour :",file,err);
+        }
+    }
+
+    throw lastError||new Error("Aucun fichier GLB trouvé");
+}
+
+function getModelFilesText(label){
+    const files=CONFIG.MODELS[label];
+    return (Array.isArray(files)?files:[files]).join(" ou ");
+}
+
+function computeFrameFromMeshes(meshes){
+    const frameMeshes=(meshes||[]).filter(mesh=>mesh&&mesh.getBoundingInfo&&!mesh.isDisposed());
+
+    if(!frameMeshes.length){
+        return {
+            center:BABYLON.Vector3.Zero(),
+            radius:80
+        };
+    }
+
+    let minX=Infinity,minY=Infinity,minZ=Infinity;
+    let maxX=-Infinity,maxY=-Infinity,maxZ=-Infinity;
+
+    frameMeshes.forEach(mesh=>{
+        const box=mesh.getBoundingInfo().boundingBox;
+        const c=box.centerWorld;
+        const e=box.extendSizeWorld;
+
+        minX=Math.min(minX,c.x-e.x);
+        minY=Math.min(minY,c.y-e.y);
+        minZ=Math.min(minZ,c.z-e.z);
+
+        maxX=Math.max(maxX,c.x+e.x);
+        maxY=Math.max(maxY,c.y+e.y);
+        maxZ=Math.max(maxZ,c.z+e.z);
+    });
+
+    const center=new BABYLON.Vector3(
+        (minX+maxX)/2,
+        (minY+maxY)/2,
+        (minZ+maxZ)/2
+    );
+
+    const size=new BABYLON.Vector3(
+        maxX-minX,
+        maxY-minY,
+        maxZ-minZ
+    );
+
+    return {
+        center,
+        radius:Math.max(size.length()/2,1)
+    };
+}
+
+function isEmicycleLabel(label){
+    return label==="EMICYCLE VOLUME"||label==="EMICYCLE COUPE";
+}
+
+function getRadiusForScreenFill(radius,screenFill){
+    const safeRadius=Math.max(radius||1,1);
+    const safeFill=BABYLON.Scalar.Clamp(screenFill||0.9,0.1,0.95);
+
+    // Le viewer estime le remplissage écran avec :
+    // angularDiameter / camera.fov.
+    // Pour obtenir 90%, on inverse donc :
+    // 2*atan(radius/cameraRadius)=camera.fov*0.90
+    return safeRadius/Math.tan((camera.fov*safeFill)/2);
+}
+
+function applyEmicycleCameraFrame(validMeshes,preserveCameraState=null){
+    const frame=computeFrameFromMeshes(validMeshes);
+
+    sceneCenter=frame.center.clone();
+    modelRadius=frame.radius;
+
+    // Les vues EMICYCLE doivent remplir environ 90% de la fenêtre.
+    defaultRadius=getRadiusForScreenFill(frame.radius,0.90);
+
+    if(preserveCameraState){
+        // On conserve uniquement l'angle de vue entre EMICYCLE VOLUME et EMICYCLE COUPE.
+        // Le cadrage est recalculé pour que chaque GLB occupe toujours 90% de l'écran.
+        camera.alpha=preserveCameraState.alpha;
+        camera.beta=preserveCameraState.beta;
+    }
+
+    camera.target=sceneCenter.clone();
+    camera.radius=defaultRadius;
+    cameraDirty=true;
+}
+
+function applyDefaultCameraFrame(label,validMeshes){
+    if(isEmicycleLabel(label)){
+        applyEmicycleCameraFrame(validMeshes,null);
+        return;
+    }
+
+    let frame=computeFrameFromMeshes(validMeshes);
+    let radiusFactor=3;
+
+    // Pour la vue masse, on cadre le bâtiment au lieu de cadrer tout le terrain.
+    // Les autres vues gardent le cadrage global classique.
+    if(label==="VUE MASSE"&&rhinoLayers.BATIMENT.length){
+        frame=computeFrameFromMeshes(rhinoLayers.BATIMENT);
+        radiusFactor=2.3;
+    }
+
+    sceneCenter=frame.center.clone();
+    modelRadius=frame.radius;
+    defaultRadius=frame.radius*radiusFactor;
+
+    camera.target=sceneCenter;
+    camera.radius=defaultRadius;
+    cameraDirty=true;
+}
+
+async function loadModelByLabel(label,preserveCameraState=null){
+    const files=CONFIG.MODELS[label];
+    if(!files)return;
+
+    saveEventMarkersForLabel(activeModelLabel);
+
+    const token=++modelLoadToken;
+    activeModelLabel=label;
+    updateViewButtons(label);
+    setLoaderVisible(true,"Chargement : "+label);
+
+    disposeCurrentModel();
+
+    try{
+        const result=await importGlbWithFallback(files);
+
+        if(token!==modelLoadToken){
+            result.meshes.forEach(mesh=>mesh.dispose(false,true));
+            if(result.transformNodes)result.transformNodes.forEach(node=>node.dispose(false,true));
+            return;
+        }
+
+        currentModelNodes.push(...result.meshes);
+        if(result.transformNodes)currentModelNodes.push(...result.transformNodes);
+
+        const validMeshes=result.meshes.filter(m=>m.getBoundingInfo&&m.getTotalVertices&&m.getTotalVertices()>0);
+
+        if(!validMeshes.length){
+            throw new Error("Aucun mesh valide trouvé dans "+getModelFilesText(label));
+        }
+
+        const modelFrame=computeFrameFromMeshes(validMeshes);
+        const center=modelFrame.center.clone();
+
+        validMeshes.forEach(mesh=>{
+            allModelMeshes.push(mesh);
+            mesh.isPickable=true;
+            mesh.alwaysSelectAsActiveMesh=true;
+            mesh.computeWorldMatrix(true);
+            if(mesh.refreshBoundingInfo){
+                mesh.refreshBoundingInfo(true);
+            }
+            mesh.alwaysSelectAsActiveMesh=true;
+
+            if(mesh.material){
+                mesh.material=simplifyOriginalMaterial(mesh.material,mesh);
+            }
+
+            originalMaterials.set(mesh,mesh.material||null);
+        });
+
+        validMeshes.forEach(mesh=>{
+            let hierarchy="";
+            let p=mesh.parent;
+
+            while(p){
+                hierarchy+=p.name.toUpperCase()+" ";
+                p=p.parent;
+            }
+
+            if(hierarchy.includes("BLOCS"))rhinoLayers.BLOCS.push(mesh);
+            if(hierarchy.includes("BATIMENT"))rhinoLayers.BATIMENT.push(mesh);
+            if(hierarchy.includes("CIRCULATIONS"))rhinoLayers.CIRCULATIONS.push(mesh);
+            if(hierarchy.includes("ABORD"))rhinoLayers.ABORD.push(mesh);
+        });
+
+        if(isEmicycleLabel(label)){
+            applyEmicycleCameraFrame(validMeshes,preserveCameraState);
+        }else if(preserveCameraState){
+            sceneCenter=modelFrame.center.clone();
+            modelRadius=modelFrame.radius;
+            defaultRadius=modelFrame.radius*3;
+            restoreCameraState(preserveCameraState);
+        }else{
+            applyDefaultCameraFrame(label,validMeshes);
+        }
+
+        computeCirculationBounds();
+        applyLayerVisibilityToLoadedModel();
+
+        validMeshes.forEach(mesh=>{
+            createBillboard(mesh,center);
+        });
+
+        organizeEscAscOutsideCirculations();
+        restoreSavedEventsForLabel(label);
+
+        applyFixedSun();
+        applyStyleMode();
+        applyRenderMode();
+
+        cameraDirty=true;
+        updateViewButtons();
+        setLoaderVisible(false);
+    }
+
+    catch(err){
+        console.error(err);
+        updateViewButtons();
+        setLoaderVisible(true,"Erreur : fichier introuvable - "+getModelFilesText(label));
+    }
+}
+
+
+document.getElementById("menuToggle").onclick=()=>{
+    const panel=document.getElementById("sidePanel");
+    const btn=document.getElementById("menuToggle");
+    panel.classList.toggle("hidden");
+    btn.textContent=panel.classList.contains("hidden")?"☰":"×";
+};
+
+document.getElementById("eventMenuToggle").onclick=()=>{
+    const panel=document.getElementById("eventPanel");
+    const btn=document.getElementById("eventMenuToggle");
+    panel.classList.toggle("hidden");
+    btn.textContent=panel.classList.contains("hidden")?"⚑":"×";
+};
+
+document.getElementById("eventsToggle").onclick=()=>{
+    visibility.events=!visibility.events;
+    updateToggle("eventsToggle",visibility.events);
+    updateEventMarkersVisibility();
+};
+
+initEventLibrary();
+
+document.getElementById("renderModeToggle").onclick=()=>toggleRenderMode();
+document.getElementById("labelsToggle").onclick=()=>toggleAnnotations();
+document.getElementById("circulationsToggle").onclick=()=>toggleLayer("CIRCULATIONS");
+document.getElementById("abordToggle").onclick=()=>toggleLayer("ABORD");
+
+document.querySelectorAll(".viewBtn").forEach(btn=>{
+    btn.onclick=()=>{
+        const label=btn.dataset.modelLabel;
+        if(label===activeModelLabel)return;
+        const cameraState=CONFIG.KEEP_CAMERA_ON_VIEW_CHANGE?getCameraState():null;
+        loadModelByLabel(label,cameraState);
+    };
+});
+
+
+loadModelByLabel(CONFIG.DEFAULT_MODEL_LABEL);
+
+engine.runRenderLoop(()=>{
+    renderFrameCounter++;
+
+    if(!renderModeBasic||renderFrameCounter%CONFIG.LABEL_UPDATE_EVERY_N_FRAMES_BASIC===0){
+        updateBillboards();
+    }
+
+    scene.render();
+});
+
+window.addEventListener("resize",()=>{
+    engine.resize();
+});
+</script>
+
+
+</body></html>
